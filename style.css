@@ -1,10 +1,9 @@
 @charset "UTF-8";
 @import url(http://fonts.googleapis.com/earlyaccess/notosansjapanese.css);
 html {
-    position: relative;
     margin: 0;
     padding: 0;
-    width: 100%;
+    width: auto;
     height: 100%;
     font-size: 20px;
     color: #fff;
@@ -20,7 +19,7 @@ body {
     padding: 0;
 }
 #container {
-    position:relative;
+    position:absolute;
     height: 100%;
 }
 @-webkit-keyframes AnimationName {
@@ -95,4 +94,464 @@ p {
     font-family: "Josefin Sans Regular";
     font-weight: 100;
     font-size: 1.2em;
+}
+
+
+.gauge {
+    height: 13em;
+    width: 13em;
+    display: block;
+    margin: 60px auto;
+    -webkit-transform: rotate(-90deg);
+    transform: rotate(-90deg);
+}
+.gauge[data-loaded="0"] .gauge__measure {
+    stroke-dashoffset: 282.7433388230814;
+}
+.gauge[data-loaded="1"] .gauge__measure {
+    stroke-dashoffset: 279.9159054348506;
+}
+.gauge[data-loaded="2"] .gauge__measure {
+    stroke-dashoffset: 277.08847204661976;
+}
+.gauge[data-loaded="3"] .gauge__measure {
+    stroke-dashoffset: 274.26103865838894;
+}
+.gauge[data-loaded="4"] .gauge__measure {
+    stroke-dashoffset: 271.4336052701581;
+}
+.gauge[data-loaded="5"] .gauge__measure {
+    stroke-dashoffset: 268.6061718819273;
+}
+.gauge[data-loaded="6"] .gauge__measure {
+    stroke-dashoffset: 265.7787384936965;
+}
+.gauge[data-loaded="7"] .gauge__measure {
+    stroke-dashoffset: 262.9513051054657;
+}
+.gauge[data-loaded="8"] .gauge__measure {
+    stroke-dashoffset: 260.12387171723486;
+}
+.gauge[data-loaded="9"] .gauge__measure {
+    stroke-dashoffset: 257.29643832900405;
+}
+.gauge[data-loaded="10"] .gauge__measure {
+    stroke-dashoffset: 254.46900494077323;
+}
+.gauge[data-loaded="11"] .gauge__measure {
+    stroke-dashoffset: 251.64157155254244;
+}
+.gauge[data-loaded="12"] .gauge__measure {
+    stroke-dashoffset: 248.81413816431163;
+}
+.gauge[data-loaded="13"] .gauge__measure {
+    stroke-dashoffset: 245.9867047760808;
+}
+.gauge[data-loaded="14"] .gauge__measure {
+    stroke-dashoffset: 243.15927138785;
+}
+.gauge[data-loaded="15"] .gauge__measure {
+    stroke-dashoffset: 240.33183799961918;
+}
+.gauge[data-loaded="16"] .gauge__measure {
+    stroke-dashoffset: 237.50440461138837;
+}
+.gauge[data-loaded="17"] .gauge__measure {
+    stroke-dashoffset: 234.67697122315755;
+}
+.gauge[data-loaded="18"] .gauge__measure {
+    stroke-dashoffset: 231.84953783492674;
+}
+.gauge[data-loaded="19"] .gauge__measure {
+    stroke-dashoffset: 229.02210444669592;
+}
+.gauge[data-loaded="20"] .gauge__measure {
+    stroke-dashoffset: 226.1946710584651;
+}
+.gauge[data-loaded="21"] .gauge__measure {
+    stroke-dashoffset: 223.3672376702343;
+}
+.gauge[data-loaded="22"] .gauge__measure {
+    stroke-dashoffset: 220.53980428200347;
+}
+.gauge[data-loaded="23"] .gauge__measure {
+    stroke-dashoffset: 217.7123708937727;
+}
+.gauge[data-loaded="24"] .gauge__measure {
+    stroke-dashoffset: 214.88493750554187;
+}
+.gauge[data-loaded="25"] .gauge__measure {
+    stroke-dashoffset: 212.05750411731105;
+}
+.gauge[data-loaded="26"] .gauge__measure {
+    stroke: #ffffff;
+    stroke-dashoffset: 209.23007072908024;
+}
+.gauge[data-loaded="27"] .gauge__measure {
+    stroke: #ffffff;
+    stroke-dashoffset: 206.40263734084942;
+}
+.gauge[data-loaded="28"] .gauge__measure {
+    stroke: #ffffff;
+    stroke-dashoffset: 203.5752039526186;
+}
+.gauge[data-loaded="29"] .gauge__measure {
+    stroke: #ffffff;
+    stroke-dashoffset: 200.7477705643878;
+}
+.gauge[data-loaded="30"] .gauge__measure {
+    stroke: #ffffff;
+    stroke-dashoffset: 197.92033717615698;
+}
+.gauge[data-loaded="31"] .gauge__measure {
+    stroke: #ffffff;
+    stroke-dashoffset: 195.09290378792616;
+}
+.gauge[data-loaded="32"] .gauge__measure {
+    stroke: #ffffff;
+    stroke-dashoffset: 192.26547039969535;
+}
+.gauge[data-loaded="33"] .gauge__measure {
+    stroke: #ffffff;
+    stroke-dashoffset: 189.43803701146453;
+}
+.gauge[data-loaded="34"] .gauge__measure {
+    stroke: #ffffff;
+    stroke-dashoffset: 186.61060362323371;
+}
+.gauge[data-loaded="35"] .gauge__measure {
+    stroke: #ffffff;
+    stroke-dashoffset: 183.7831702350029;
+}
+.gauge[data-loaded="36"] .gauge__measure {
+    stroke: #ffffff;
+    stroke-dashoffset: 180.95573684677208;
+}
+.gauge[data-loaded="37"] .gauge__measure {
+    stroke: #ffffff;
+    stroke-dashoffset: 178.12830345854127;
+}
+.gauge[data-loaded="38"] .gauge__measure {
+    stroke: #ffffff;
+    stroke-dashoffset: 175.30087007031045;
+}
+.gauge[data-loaded="39"] .gauge__measure {
+    stroke: #ffffff;
+    stroke-dashoffset: 172.47343668207964;
+}
+.gauge[data-loaded="40"] .gauge__measure {
+    stroke: #ffffff;
+    stroke-dashoffset: 169.64600329384882;
+}
+.gauge[data-loaded="41"] .gauge__measure {
+    stroke: #ffffff;
+    stroke-dashoffset: 166.818569905618;
+}
+.gauge[data-loaded="42"] .gauge__measure {
+    stroke: #ffffff;
+    stroke-dashoffset: 163.9911365173872;
+}
+.gauge[data-loaded="43"] .gauge__measure {
+    stroke: #ffffff;
+    stroke-dashoffset: 161.16370312915637;
+}
+.gauge[data-loaded="44"] .gauge__measure {
+    stroke: #ffffff;
+    stroke-dashoffset: 158.33626974092556;
+}
+.gauge[data-loaded="45"] .gauge__measure {
+    stroke: #ffffff;
+    stroke-dashoffset: 155.50883635269474;
+}
+.gauge[data-loaded="46"] .gauge__measure {
+    stroke: #ffffff;
+    stroke-dashoffset: 152.68140296446396;
+}
+.gauge[data-loaded="47"] .gauge__measure {
+    stroke: #ffffff;
+    stroke-dashoffset: 149.85396957623314;
+}
+.gauge[data-loaded="48"] .gauge__measure {
+    stroke: #ffffff;
+    stroke-dashoffset: 147.02653618800232;
+}
+.gauge[data-loaded="49"] .gauge__measure {
+    stroke: #ffffff;
+    stroke-dashoffset: 144.1991027997715;
+}
+.gauge[data-loaded="50"] .gauge__measure {
+    stroke: #ffffff;
+    stroke-dashoffset: 141.3716694115407;
+}
+.gauge[data-loaded="51"] .gauge__measure {
+    stroke: #ffffff;
+    stroke-dashoffset: 138.54423602330988;
+}
+.gauge[data-loaded="52"] .gauge__measure {
+    stroke: #ffffff;
+    stroke-dashoffset: 135.71680263507906;
+}
+.gauge[data-loaded="53"] .gauge__measure {
+    stroke: #ffffff;
+    stroke-dashoffset: 132.88936924684825;
+}
+.gauge[data-loaded="54"] .gauge__measure {
+    stroke: #ffffff;
+    stroke-dashoffset: 130.06193585861743;
+}
+.gauge[data-loaded="55"] .gauge__measure {
+    stroke: #ffffff;
+    stroke-dashoffset: 127.23450247038662;
+}
+.gauge[data-loaded="56"] .gauge__measure {
+    stroke: #ffffff;
+    stroke-dashoffset: 124.4070690821558;
+}
+.gauge[data-loaded="57"] .gauge__measure {
+    stroke: #ffffff;
+    stroke-dashoffset: 121.57963569392501;
+}
+.gauge[data-loaded="58"] .gauge__measure {
+    stroke: #ffffff;
+    stroke-dashoffset: 118.7522023056942;
+}
+.gauge[data-loaded="59"] .gauge__measure {
+    stroke: #ffffff;
+    stroke-dashoffset: 115.92476891746338;
+}
+.gauge[data-loaded="60"] .gauge__measure {
+    stroke: #ffffff;
+    stroke-dashoffset: 113.09733552923257;
+}
+.gauge[data-loaded="61"] .gauge__measure {
+    stroke: #ffffff;
+    stroke-dashoffset: 110.26990214100175;
+}
+.gauge[data-loaded="62"] .gauge__measure {
+    stroke: #ffffff;
+    stroke-dashoffset: 107.44246875277094;
+}
+.gauge[data-loaded="63"] .gauge__measure {
+    stroke: #ffffff;
+    stroke-dashoffset: 104.61503536454012;
+}
+.gauge[data-loaded="64"] .gauge__measure {
+    stroke: #ffffff;
+    stroke-dashoffset: 101.7876019763093;
+}
+.gauge[data-loaded="65"] .gauge__measure {
+    stroke: #ffffff;
+    stroke-dashoffset: 98.96016858807849;
+}
+.gauge[data-loaded="66"] .gauge__measure {
+    stroke: #ffffff;
+    stroke-dashoffset: 96.13273519984767;
+}
+.gauge[data-loaded="67"] .gauge__measure {
+    stroke: #ffffff;
+    stroke-dashoffset: 93.30530181161686;
+}
+.gauge[data-loaded="68"] .gauge__measure {
+    stroke: #ffffff;
+    stroke-dashoffset: 90.47786842338604;
+}
+.gauge[data-loaded="69"] .gauge__measure {
+    stroke: #ffffff;
+    stroke-dashoffset: 87.65043503515525;
+}
+.gauge[data-loaded="70"] .gauge__measure {
+    stroke: #ffffff;
+    stroke-dashoffset: 84.82300164692444;
+}
+.gauge[data-loaded="71"] .gauge__measure {
+    stroke: #ffffff;
+    stroke-dashoffset: 81.99556825869362;
+}
+.gauge[data-loaded="72"] .gauge__measure {
+    stroke: #ffffff;
+    stroke-dashoffset: 79.16813487046281;
+}
+.gauge[data-loaded="73"] .gauge__measure {
+    stroke: #ffffff;
+    stroke-dashoffset: 76.34070148223199;
+}
+.gauge[data-loaded="74"] .gauge__measure {
+    stroke: #ffffff;
+    stroke-dashoffset: 73.51326809400118;
+}
+.gauge[data-loaded="75"] .gauge__measure {
+    stroke: #ffffff;
+    stroke-dashoffset: 70.68583470577033;
+}
+.gauge[data-loaded="76"] .gauge__measure {
+    stroke: #ffffff;
+    stroke-dashoffset: 67.85840131753952;
+}
+.gauge[data-loaded="77"] .gauge__measure {
+    stroke: #ffffff;
+    stroke-dashoffset: 65.0309679293087;
+}
+.gauge[data-loaded="78"] .gauge__measure {
+    stroke: #ffffff;
+    stroke-dashoffset: 62.203534541077886;
+}
+.gauge[data-loaded="79"] .gauge__measure {
+    stroke: #ffffff;
+    stroke-dashoffset: 59.37610115284707;
+}
+.gauge[data-loaded="80"] .gauge__measure {
+    stroke: #ffffff;
+    stroke-dashoffset: 56.548667764616255;
+}
+.gauge[data-loaded="81"] .gauge__measure {
+    stroke: #ffffff;
+    stroke-dashoffset: 53.72123437638544;
+}
+.gauge[data-loaded="82"] .gauge__measure {
+    stroke: #ffffff;
+    stroke-dashoffset: 50.89380098815465;
+}
+.gauge[data-loaded="83"] .gauge__measure {
+    stroke: #ffffff;
+    stroke-dashoffset: 48.06636759992384;
+}
+.gauge[data-loaded="84"] .gauge__measure {
+    stroke: #ffffff;
+    stroke-dashoffset: 45.23893421169302;
+}
+.gauge[data-loaded="85"] .gauge__measure {
+    stroke: #ffffff;
+    stroke-dashoffset: 42.411500823462205;
+}
+.gauge[data-loaded="86"] .gauge__measure {
+    stroke: #ffffff;
+    stroke-dashoffset: 39.58406743523139;
+}
+.gauge[data-loaded="87"] .gauge__measure {
+    stroke: #ffffff;
+    stroke-dashoffset: 36.756634047000574;
+}
+.gauge[data-loaded="88"] .gauge__measure {
+    stroke: #ffffff;
+    stroke-dashoffset: 33.92920065876976;
+}
+.gauge[data-loaded="89"] .gauge__measure {
+    stroke: #ffffff;
+    stroke-dashoffset: 31.101767270538943;
+}
+.gauge[data-loaded="90"] .gauge__measure {
+    stroke: #ffffff;
+    stroke-dashoffset: 28.274333882308127;
+}
+.gauge[data-loaded="91"] .gauge__measure {
+    stroke: #ffffff;
+    stroke-dashoffset: 25.44690049407734;
+}
+.gauge[data-loaded="92"] .gauge__measure {
+    stroke: #ffffff;
+    stroke-dashoffset: 22.619467105846525;
+}
+.gauge[data-loaded="93"] .gauge__measure {
+    stroke: #ffffff;
+    stroke-dashoffset: 19.79203371761571;
+}
+.gauge[data-loaded="94"] .gauge__measure {
+    stroke: #ffffff;
+    stroke-dashoffset: 16.964600329384893;
+}
+.gauge[data-loaded="95"] .gauge__measure {
+    stroke: #ffffff;
+    stroke-dashoffset: 14.137166941154078;
+}
+.gauge[data-loaded="96"] .gauge__measure {
+    stroke: #ffffff;
+    stroke-dashoffset: 11.309733552923262;
+}
+.gauge[data-loaded="97"] .gauge__measure {
+    stroke: #ffffff;
+    stroke-dashoffset: 8.482300164692447;
+}
+.gauge[data-loaded="98"] .gauge__measure {
+    stroke: #ffffff;
+    stroke-dashoffset: 5.654866776461631;
+}
+.gauge[data-loaded="99"] .gauge__measure {
+    stroke: #ffffff;
+    stroke-dashoffset: 2.827433388230816;
+}
+.gauge[data-loaded="100"] .gauge__measure {
+    stroke: #ffffff;
+    stroke-dashoffset: 0;
+}
+.gauge--processing {
+    position: relative;
+}
+.gauge--processing:after {
+    content: '';
+    display: inline-block;
+    height: 50px;
+    width: 50px;
+    background-color: #fafafa;
+    border-radius: 100%;
+    margin-left: -25px;
+    margin-top: -25px;
+    top: 50%;
+    left: 50%;
+    position: absolute;
+    -webkit-animation: pulse 4s infinite ease;
+    animation: pulse 4s infinite ease;
+}
+.gauge__ring {
+    fill: none;
+    stroke-width: 1.3px;
+    shape-rendering: geometricPrecision;
+}
+.gauge__measure {
+    fill: none;
+    stroke-width: 4px;
+    shape-rendering: geometricPrecision;
+}
+.gauge__ring {
+    stroke: #fafafa;
+    opacity: 0.8;
+}
+.gauge__measure {
+    stroke-dasharray: 282.7433388230814;
+    stroke: #ffffff;
+    -webkit-transition: stroke-dashoffset 0.5s ease 0s;
+    transition: stroke-dashoffset 0.5s ease 0s;
+}
+@-webkit-keyframes pulse {
+    0% {
+        opacity: 0;
+    }
+    25% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0;
+    }
+    75% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+@keyframes pulse {
+    0% {
+        opacity: 0;
+    }
+    25% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0;
+    }
+    75% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
 }
