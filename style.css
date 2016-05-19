@@ -9,7 +9,6 @@ html {
     font-size: 20px;
     color: #fff;
     font-family: "Josefin Sans Regular","Noto Sans Japanese","ヒラギノ角ゴ Pro W3","Hiragino Kaku Gothic Pro","MS Pゴシック","MS P Gothic","Osaka",sans-serif;
-
     background: linear-gradient(330deg, #fee1b0, #fcd3a5, #eeaf93, #a48eab, #9187be, #ebc8e3, #bfb4e5, #b7c1d7, #e5e5d5, #e9d191, #dabe81, #af9e81, #a6a9a2, #a6b4ba, #7caacd, #81beca, #61d8cb, #6cd8bc, #88bfa1, #c0d49d);
     background-size: 4000% 4000%;
 
@@ -19,6 +18,10 @@ html {
 body {
     margin: 0;
     padding: 0;
+}
+#container {
+    position:relative;
+    height: 100%;
 }
 @-webkit-keyframes AnimationName {
     0%{background-position:15% 0%}
@@ -42,13 +45,12 @@ body {
     }
 }
 canvas {
+    z-index: 100;
     position: absolute;
-    opacity: .7;
     width: 100%;
     height: 100%;
 }
 .container {
-    x-index: 100;
     position: absolute;
     margin: 5em auto;
     text-align: center;
