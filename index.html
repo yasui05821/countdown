@@ -4,6 +4,7 @@
 <link href='http://fonts.googleapis.com/css?family=Josefin+Sans&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no"">
     <title>Countdown</title>
 </head>
 <body>
@@ -14,26 +15,27 @@
             <p>開催まで</p>
             <div class="countdown">
                 <div class="dateBlock">
-                    <span class="date">365</span>
+                    <span class="date">235</span>
                     <span class="days">Days</span>
                 </div>
+                <div data-loaded="80" class="gauge">
+                    <svg viewBox="0 0 100 100" preserveAspectRatio="xMinYMin">
+                        <filter id="drop-shadow" width="150%" height="150%">
+                            <feGaussianBlur in="SourceAlpha" stdDeviation="1.7"/>
+                            <feOffset dx="0" dy="0" result="offsetblur"/>
+                            <feFlood flood-color="white"/>
+                            <feComposite in2="offsetblur" operator="in"/>
+                            <feMerge>
+                                <feMergeNode/>
+                                <feMergeNode in="SourceGraphic"/>
+                            </feMerge>
+                        </filter>
+                        <circle r="45" cy="50" cx="50" filter="url(#drop-shadow)" class="gauge__ring"></circle>
+                        <circle r="45" cy="50" cx="50" filter="url(#drop-shadow)" class="gauge__measure"></circle>
+                    </svg>
+                </div>
             </div>
-            <div data-loaded="80" class="gauge">
-                <svg viewBox="0 0 100 100" preserveAspectRatio="xMinYMin">
-                    <filter id="drop-shadow" width="150%" height="150%">
-                        <feGaussianBlur in="SourceAlpha" stdDeviation="1.7"/>
-                        <feOffset dx="0" dy="0" result="offsetblur"/>
-                        <feFlood flood-color="white"/>
-                        <feComposite in2="offsetblur" operator="in"/>
-                        <feMerge>
-                            <feMergeNode/>
-                            <feMergeNode in="SourceGraphic"/>
-                        </feMerge>
-                    </filter>
-                    <circle r="45" cy="50" cx="50" filter="url(#drop-shadow)" class="gauge__ring"></circle>
-                    <circle r="45" cy="50" cx="50" filter="url(#drop-shadow)" class="gauge__measure"></circle>
-                </svg>
-            </div>
+
         </div><!--continer-->
         <script src="https://code.jquery.com/jquery-2.2.3.min.js"></script>
         <script src="fireflies.js"></script>
