@@ -1,0 +1,84 @@
+@charset "UTF-8";
+@import url(http://fonts.googleapis.com/earlyaccess/notosansjapanese.css);
+html {
+    margin: 0 auto;
+    width: 100%;
+    height: 100%;
+
+    font-size: 20px;
+    color: #fff;
+    font-family: "Josefin Sans Regular","Noto Sans Japanese","ヒラギノ角ゴ Pro W3","Hiragino Kaku Gothic Pro","MS Pゴシック","MS P Gothic","Osaka",sans-serif;
+
+    background: linear-gradient(330deg, #fee1b0, #fcd3a5, #eeaf93, #a48eab, #9187be, #ebc8e3, #bfb4e5, #b7c1d7, #e5e5d5, #e9d191, #dabe81, #af9e81, #a6a9a2, #a6b4ba, #7caacd, #81beca, #61d8cb, #6cd8bc, #88bfa1, #c0d49d);
+    background-size: 4000% 4000%;
+
+    -webkit-animation: AnimationName 70s ease infinite;
+    animation: AnimationName 70s ease infinite;
+}
+@-webkit-keyframes AnimationName {
+    0%{background-position:15% 0%}
+    50%{background-position:86% 100%}
+    100%{background-position:15% 0%}
+}
+@-moz-keyframes AnimationName {
+    0%{background-position:15% 0%}
+    50%{background-position:86% 100%}
+    100%{background-position:15% 0%}
+}
+@keyframes AnimationName {
+    0%{background-position:15% 0%}
+    50%{background-position:86% 100%}
+    100%{background-position:15% 0%}
+}
+
+@media screen and (min-width:480px) {
+    html {
+        font-size: 16px;
+    }
+}
+
+.container {
+    margin: 5em auto;
+    text-align: center;
+    width: auto;
+}
+h1 {
+    margin: .5em 0;
+    font-size: 2em;
+    font-weight: 100;
+}
+p {
+    margin-bottom: 2em;
+    font-weight: 100;
+}
+.countdown {
+    box-sizing: border-box;
+    position: relative;
+    display: inline-block;
+    text-align: center;
+    width: 12em;
+    height: 12em;
+    border: 2px solid #fff;
+    border-radius: 50%;
+    box-shadow: 0px 0px 8px #fff;
+}
+.dateBlock {
+    width: 100%;
+    height: 100%;
+    margin-top:  -26%;
+    position: absolute;
+    top:50%;
+
+}
+.dateBlock span {
+    display: block;
+}
+.dateBlock span.date {
+    font-family: "Helvetica Neue","Helvetica";
+    font-weight: 100;
+    font-size: 3.5em;
+}.countdown span.days {
+    font-family: "Josefin Sans Regular";
+    font-weight: 100;
+    font-size: 1.2em;
+}
